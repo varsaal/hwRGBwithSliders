@@ -9,20 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var colorView: UIView!
+    @IBOutlet weak var colorView: UIView!
     
-    @IBOutlet var redLabel: UILabel!
-    @IBOutlet var greenLabel: UILabel!
-    @IBOutlet var blueLabel: UILabel!
+    @IBOutlet weak var redLabel: UILabel!
+    @IBOutlet weak var greenLabel: UILabel!
+    @IBOutlet weak var blueLabel: UILabel!
     
-    @IBOutlet var redSlider: UISlider!
-    @IBOutlet var greenSlider: UISlider!
-    @IBOutlet var blueSlider: UISlider!
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
     
     
-    @IBOutlet var redTextfild: UITextField!
-    @IBOutlet var greenTextfild: UITextField!
-    @IBOutlet var blueTextfild: UITextField!
+    @IBOutlet weak var redTextfild: UITextField!
+    @IBOutlet weak var greenTextfild: UITextField!
+    @IBOutlet weak var blueTextfild: UITextField!
     
     
     override func viewDidLoad() {
@@ -61,6 +61,9 @@ class ViewController: UIViewController {
         colorView.layer.cornerRadius = 15
         
         setColor()
+        addDoneButtonTo(redTextfild)
+        addDoneButtonTo(greenTextfild)
+        addDoneButtonTo(blueTextfild)
         
         //addDoneButtonTo(redTextfild)
         //addDoneButtonTo(greenTextfild)
@@ -118,6 +121,9 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print(#function)
+        
+        // resignFirstResponder скрывает клавиатуру для текстового поля
+        
         textField.resignFirstResponder()
         return true
     }
@@ -174,7 +180,7 @@ extension ViewController {
         // Расширили тулбар по размеру клавиатуры
         keyboardToolbar.sizeToFit()
         // action - какой метод должен вызывать по нажатию на "Готово"
-        let doneButton = UIBarButtonItem(title: "Готово",
+        let doneButton = UIBarButtonItem(title: "Done",
                                          style: .done,
                                          target: self,
                                          action: #selector(dadTapDone))

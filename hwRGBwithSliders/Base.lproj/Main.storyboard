@@ -76,7 +76,7 @@
                                     <constraint firstAttribute="width" constant="49" id="i0d-CQ-okQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="psr-v4-24q">
                                 <rect key="frame" x="359" y="312" width="49" height="34"/>
@@ -84,7 +84,7 @@
                                     <constraint firstAttribute="width" constant="49" id="XQD-84-GRB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="mAW-Wp-v3l">
                                 <rect key="frame" x="359" y="356" width="49" height="34"/>
@@ -92,7 +92,7 @@
                                     <constraint firstAttribute="width" constant="49" id="fgM-aW-htu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyN-Ls-GMB">
                                 <rect key="frame" x="23" y="60" width="382" height="180"/>
